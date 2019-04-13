@@ -13,7 +13,6 @@ nsample_1 = length(OriginalSignal);
 nsample_2 = fix(fs/pps);
 
 %% ten electrodes
-
 % sinewave as carrier
 t = (0:nsample_1-1)/fs;
 Sinwave = zeros(10,length(t));
@@ -55,7 +54,6 @@ audiowrite(FileName_CI_NBNoise,CI_NBNoise/(scale*max(abs(CI_NBNoise))),fs);
 
 
 %% twenty electrodes
-
 % sinewave as carrier
 t = (0:nsample_1-1)/fs;
 Sinwave = zeros(20,length(t));
